@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AccountFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/accDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="18dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user"
+                android:padding="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Details"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/mallanna"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_right_arrrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="120dp"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/rateUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_star"
+                android:padding="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate Us"
+                android:fontFamily="@font/mallanna"
+                android:layout_gravity="center_vertical"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_right_arrrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="210dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/shareApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_share"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share App"
+                android:fontFamily="@font/mallanna"
+                android:layout_gravity="center_vertical"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_right_arrrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="182dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/termsOfService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/terms"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:fontFamily="@font/mallanna"
+                android:layout_gravity="center_vertical"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_right_arrrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="108dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/privacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/shield"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:fontFamily="@font/mallanna"
+                android:layout_gravity="center_vertical"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_right_arrrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="140dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/deleteAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_red_delete"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Account"
+                android:layout_gravity="center_vertical"
+                android:textSize="25sp"
+                android:fontFamily="@font/mallanna"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_right_arrrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="125dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

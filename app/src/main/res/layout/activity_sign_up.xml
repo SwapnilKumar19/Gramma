@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity">
+
+    <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="32dp"
+    android:fontFamily="@font/mallanna"
+    android:text="Sign Up"
+    android:textColor="@color/black"
+    android:textSize="40sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <!--<androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profileImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_user"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_background"
+        android:tint="@color/white"
+        android:backgroundTint="@color/blue_200"/>-->
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/type_background"
+            android:hint="Name"
+            android:inputType="text"
+            android:fontFamily="@font/mallanna"
+            android:paddingStart="20dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/type_background"
+            android:hint="Address"
+            android:fontFamily="@font/mallanna"
+            android:paddingStart="20dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/type_background"
+            android:hint="Email"
+            android:fontFamily="@font/mallanna"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/type_background"
+            android:hint="Password"
+            android:fontFamily="@font/mallanna"
+            android:inputType="textPassword"
+            android:paddingStart="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/mallanna"
+            android:text="Sign Up"
+            android:textAllCaps="false" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/btn_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mallanna"
+        android:text="Already a User? Login Here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

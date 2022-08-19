@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/ppCardView">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pencil"
+            android:padding="12dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raman Raghav"
+            android:textSize="25sp"
+            android:fontFamily="@font/mallanna"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangalore, India"
+            android:fontFamily="@font/mallanna"
+            android:textSize="16sp"
+            android:layout_marginStart="70dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="#000000" />
+</androidx.cardview.widget.CardView>

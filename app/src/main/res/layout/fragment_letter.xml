@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LetterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_margin="20dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Today, 8:30 AM"
+            android:textSize="16sp"
+            android:fontFamily="@font/mallanna"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/edtTxtLetterW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:fontFamily="@font/mallanna"
+            android:text="Hello, Dani!\nI hope this letter finds you well.\n\nIt is wonderful to have some news from you. I really appreciate what you wrote to me.
+I would say that my favourite day of the week is friday due to the fact that I have an exciting feeling as the weekend is coming.\nAfter finishing my work, I decide what I am going to do, whatever going out with my friends or just staying at home to watch a film or a TV series.\nAlso, I feel willing to cook something. I love italian food such as pasta or typical brazilian food.
+I am looking forward to seeing you.\n\nSend your family a hug.\nBest regards"
+            android:textSize="18sp"
+            android:lineSpacingExtra="-2dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="120dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="From: John Doe"
+            android:textSize="18sp"
+            android:fontFamily="@font/mallanna"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintVertical_bias="0.315" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Paris, France"
+            android:textSize="18sp"
+            android:fontFamily="@font/mallanna"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="-8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/audioImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sound"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintVertical_bias="0.509" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

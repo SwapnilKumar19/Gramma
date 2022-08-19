@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FinalSendFragment">
+
+
+    <TextView
+        android:id="@+id/textviewletter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mallanna"
+        android:text="Your Letter Will Look Like This: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lettercard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sendbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewletter">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/sendbackground"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/senderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:maxLines="1"
+                android:text="XYZ Nair"
+                android:fontFamily="@font/mallanna"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/senderAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-8dp"
+                android:maxLines="1"
+                android:fontFamily="@font/mallanna"
+                android:text="Bhopal, India"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/senderName" />
+
+            <TextView
+                android:id="@+id/receiverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="ABC Kumar"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/mallanna"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/receiverAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Dhanbad, India"
+                android:fontFamily="@font/mallanna"
+                android:layout_marginTop="-8dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/receiverName" />
+
+
+            <ImageView
+                android:id="@+id/stampImage"
+                android:layout_width="80dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="-15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/stamp_chess"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/audioImage"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/sound"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.003"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sendbackground"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lettercard">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Add Stamp: "
+            android:fontFamily="@font/mallanna"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_music" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_chess" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_vangogh" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_astronaut" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_boat" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_compass" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_earth" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_engineering" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_love" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_nature" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_plane" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_wave" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/sendbackground"
+        android:elevation="4dp"
+        android:text="Add a Voice Message"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/mallanna"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@drawable/ic_mic"
+        android:textAlignment="viewStart"
+        android:paddingStart="16dp"
+        android:drawablePadding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/sendbackground"
+        android:elevation="4dp"
+        android:text="Send Letter"
+        android:textAllCaps="false"
+        android:fontFamily="@font/mallanna"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
